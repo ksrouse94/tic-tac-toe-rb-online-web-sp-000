@@ -120,4 +120,10 @@ def play(board)
   until over?(board)
     input = gets
   end
+  if won?(board)
+    char = winner(board)
+    puts "Congratulations #{char}!"
+  elsif
+    draw?(board)
+    puts "Cat's game!"
 end  
