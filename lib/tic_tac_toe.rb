@@ -119,6 +119,7 @@ end
 def play(board)
   until over?(board)
     turn(board)
+    turn_count(board)
   end
   if won?(board)
     char = winner(board)
